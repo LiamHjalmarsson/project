@@ -1,0 +1,96 @@
+:root {
+    --bg:#1B2223;
+    --btn:#3A4F50;
+    --text:#0EF6CC;
+    --border: ;
+}
+
+body {
+    background-color: var(--bg);
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;    
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#text {
+    font-size: 18px;
+}
+
+#butttons {
+    display: flex;
+    flex-basis: 1;
+}
+
+#bg, #color, #border {
+    width: 100px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: var(--btn);
+    color: var(--text);
+}
+
+#info {
+    width: 300px;
+}
+
+#info-bg, #info-text, #info-border {    
+    margin: 15px 0px;
+    color: var(--text);
+}
+
+#saved {
+    margin-top: 30px;
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#saved-bg, #saved-text, #saved-border {
+    color: var(--text);
+}
+
+.save {
+    background-color: var(--btn);
+    color: var(--text);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.close {
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: var(--btn);
+    color: var(--text);
+}
