@@ -1,20 +1,114 @@
+:root {
+    --done: rgb(112, 224, 75);
+    --notDone: rgb(214, 48, 48);
+}
+
+.darkTheme {
+    --done: rgb(28, 171, 116);
+}
+
 header, main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 10px;
 }
 
-#input-name {
+#input-name, #input-course {
+    margin-left: 20px;
     padding: 5px;
     width: 200px;
 }
 
 #container {
     padding: 10px;
+    flex-direction: column;
 }
 
+/* students */
 .student {
-    width: 350px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 700px;
     padding: 10px;
+}
+
+.name {
+    font-size: 1.3rem;
+    width: 300px    ;
+    border-bottom: 1px solid black;
+}
+
+h3 {
+    margin: 10px 0px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+.course {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* css teachers */
+
+.coureDiv {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 700px;
+    padding: 10px;
+}
+
+.responsible {
+    display: flex;
+    gap:80px;
+    padding-top: 10px;
+}
+
+.containerTeachers {
+    display: flex;
+    padding: 10px;
+}
+
+.professor {
+    width: 200px;
+    margin: 0px;
+    padding: 0px 5px;
+}
+
+.course-teachers {
+    padding: 0px 5spx;
+    margin: 0px;
+}
+
+.studentBox {
+    display: grid;
+    text-align: center;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.done, .notDone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+.done {
+    	background-color: var(--done);
+}
+
+.notDone {
+    background-color: var(--notDone);
 }
