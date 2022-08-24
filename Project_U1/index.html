@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <label for="inputRows">Rows</label>
+        <input type="number" size="4" placeholder="Rows" min="0" id="input-rows" value="5">
+        <label for="inputCols">Cols</label>
+        <input type="number" size="4" placeholder="Cols" min="0" id="input-cols" value="5">
+        <button> Make grid </button>
+    </header>
+
+    <main>
+        <div>PRESSED: <span class="pressed"> </span></div>
+        <div>LENGTH: <span class="length"> </span></div>
+        <div>TOTAL VALUE: <span class="total"> </span></div>
+        <div>AVERAGE TOTALE: <span class="average"> </span></div>
+    </main>
+
+    <div id="container"></div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
