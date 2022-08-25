@@ -1,0 +1,89 @@
+header, main {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 100vw;
+    flex-direction: column;
+}
+
+#labels, #inputs-add, #inputs-filter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center  ;
+    padding: 5px;
+    gap: 10px;
+    margin-bottom: 0px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-box > button {
+    margin-top: 5px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.button-box > button {
+    padding: 5px;
+    width: 150px;
+}
+
+input {
+    text-align: center;
+    padding: 5px;
+}
+
+#wrapper {
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid black ;
+}
+
+#titles {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;
+}
+
+.person > p {
+    margin: 0px;
+}
+
+#info-box {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid black;
+}

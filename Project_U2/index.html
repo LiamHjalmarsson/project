@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        
+        <form action="" id="add-form">
+            
+            <div id="inputs-add">
+
+                <div class="input-box">
+                    <label for="add-form" class=""> First name </label>
+                    <input type="text" id="add-name" placeholder="Wrtie your name">
+                </div>
+                <div class="input-box">
+                    <label for="add-form" class=""> Last name </label>
+                    <input type="text" id="add-last" placeholder="Wrtie your last name">
+                </div>
+                <div class="input-box">
+                    <label for="add-form" class=""> Gender </label>
+                    <input type="text" id="add-gender" placeholder="Wrtie your Gender">
+                </div>
+                <div class="input-box">
+                    <label for="add-form" class=""> Age </label>
+                    <input type="number" id="add-age" placeholder="Wrtie your age">
+                </div>
+                <div class="input-box">
+                    <label for="add-form" class=""> Preferd </label>
+                    <input type="text" id="add-best" placeholder="Write your best">
+                </div>
+                <div class="input-box">
+                    <label for="add-form" class=""> Worst </label>
+                    <input type="text" id="add-worst" placeholder="Write your worst">
+                </div>
+                
+                <div class="button-box">
+                    <button id="add-button"> Add to database </button>
+                </div>
+
+            </div>
+
+        </form>
+
+            <div id="inputs-filter">
+                
+                <form class="filter-box" id="form-name">
+                    <label for="add-form" class=""> Filter name </label>
+                    <input type="text" id="filter-name" placeholder="Filter name" size="20">
+                    <button id="filter-name-button">Name</button>
+                </form>
+
+                <form class="filter-box" id="form-last">
+                    <label for="add-form" class=""> Filter name </label>
+                    <input type="text" id="filter-last" placeholder="Filter last name" size="20">
+                    <button id="filter-last-button">Last</button>
+                </form>
+
+                <form class="filter-box" id="form-gender">
+                    <label for="add-form" class=""> Filter Gender </label>
+                    <input type="text" id="filter-gender" placeholder="Filter Gender" size="20">
+                    <button id="filter-gender-button">Gender</button>
+                </form>
+
+                <form class="filter-box" id="form-age">
+                    <label for="add-form" class=""> Filter Age </label>
+                    <input type="number" id="filter-age" placeholder="Filter age" size="10">
+                    <button id="filter-age-button">Age</button>
+                </form>
+
+                <form class="filter-box" id="form-best">
+                    <label for="add-form" class=""> Filter Preferd </label>
+                    <input type="text" id="filter-best" placeholder="Filter best" size="20">
+                    <button id="filter-best-button">Best</button>
+                </form>
+
+                <form class="filter-box" id="form-worst">
+                    <label for="add-form" class=""> Filter Worst </label>
+                    <input type="text" id="filter-worst" placeholder="Filter worst" size="20">
+                    <button id="filter-worst-button">Worst</button>
+                </form>
+
+                <div class="button-box">
+                    <button id="show-all"> Show all </button>
+                </div>
+            </div>
+
+    </header>
+
+    <main>
+
+        <div id="wrapper">
+
+            <section id="titles">
+                <h3>First</h3>
+                <h3>Last</h3>
+                <h3>Gender</h3>
+                <h3>Age</h3>
+                <h3>Best</h3>
+                <h3>Preferd</h3>
+                <h3>Remove</h3>
+            </section>  
+            
+
+            <div id="container">
+
+            </div>
+
+            <div id="info-box">
+                <div id="average"></div>
+                <div id="averageMen"></div>
+                <div id="averageWomen"></div>
+            </div>
+
+        </div>
+
+    </main>
+    
+
+    <script src="database.js"></script>
+    <script src="createNewPerson.js"></script>
+    <script src="addToDB.js"></script>
+    <script src="submit.js"></script>
+    <script src="remove.js"></script>
+    <script src="render.js"></script>
+    <script src="filter.js"></script>
+    <script src="averageAge.js"></script>
+    <script src="functionsCalls.js"></script>
+
+</body>
+</html>
