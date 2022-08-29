@@ -1,0 +1,248 @@
+/* CSS just first page */
+
+:root {
+  --whiteLowOpacity: rgba(255, 255, 255, 0.65);
+  --whiteLowLowOpacity: rgba(255, 255, 255, 0.34);
+  --blueLowOpacity: #425664b7;
+}
+
+#header-box {
+  background-image: url(../db/frontpage.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+#header-text {
+  padding: 25px;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 30px;
+  margin-top: 10vh;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  background-color: var(--whiteLowLowOpacity);
+}
+
+.all-about-button {
+  padding: 5px 20px;
+  background-color: var(--whiteLowOpacity);
+  border: 0px;
+  cursor: pointer;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+#scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-button {
+  display: inline-block;
+  color: var(--blackColor);
+  background-color: var(--whiteLowOpacity);
+  border: 0px;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Barlow Condensed';
+  font-size: 20px;
+  height: 50px;
+}
+
+#img-slide-container, #img-slideFields-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+#img-box, #imgFields-box {
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  max-width: 1000px;
+}
+
+.img-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 10px;
+  height: 250px;
+  width: 50vw;
+  max-width: 250px;
+  min-width: 160px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 300ms;
+}
+
+.slide-button, .img-slide-button {
+  display: inline-block;
+  color: var(--blackColor);
+  background-color: var(--whiteLowOpacity);
+  border: 0px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Barlow Condensed';
+  font-size: 15px;
+}
+
+.img-slide:hover {
+  transform: scale(1.03);
+}
+
+.img-slide:hover > .img-slide-button {
+  background-color: var(--blueLowOpacity);
+}
+
+.img-slide:hover > .img-slide-button > a {
+  color: var(--lightColor);
+}
+
+.img-slide-button {
+  padding: 10px 15px;
+  transition: background-color 300ms;
+}
+
+#slide-show {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  max-width: 1000px;
+}
+
+.slide-button {
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 15px;
+  width: 50px;
+  height: 35px;
+}
+
+.slide-button:nth-child(2) {
+  margin-right: 10px;
+}
+
+#info-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+#text-info {
+  text-align: center;
+  padding: 20px;
+  max-width: 1000px;
+  font-weight: 300;
+}
+
+#text-info:first-child p {
+  margin-bottom: 10px;
+}
+
+#img-field-box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#img-field-box > h2 {
+  font-weight: 300;
+}
+
+#ressencioner-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#ressencioner-container > h4 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 200px;
+  max-width: 300px;
+  background-color: var(--lightColor);
+  padding: 10px;
+  margin: 5px 15px;
+}
+
+.rating {
+  margin-top: 5px;
+}
+
+.starStudent {
+  color: var(--starColor);
+}
+
+.comment-box > p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.comment-box > h4 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.comment-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  margin: 5px;
+}
+
+.imgStudent {
+  height: 90px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.student01 {
+  background-image: url(../db/Images/student_pictures/student01.jpg);
+  background-size: 80%;
+  background-position: top;
+}
+
+.student02 {
+  background-image: url(../db/Images/student_pictures/student02.jpg);
+  background-position: 90%;
+  background-size: cover;
+}
+
+.student03 {
+  background-image: url(../db /Images/student_pictures/student03.jpg);
+  background-size: 90%;
+  background-position: center;
+}
+
+.comment-name {
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .comment-box {
+    max-width: 1000px;
+  }
+}
