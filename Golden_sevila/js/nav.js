@@ -131,11 +131,10 @@ function searchOnClick (search) {
 function createLightHeart () {
     let div = createElement("div");
     div.classList.add("my-likes");
-    div.innerHTML = 'l'
-    // div.innerHTML = '<i class="fa-regular fa-heart"></i>'
+    div.innerHTML = '<i class="fa-regular fa-heart"></i>'
 
     div.addEventListener("click", function () {
-
+        changeClassOnLikeContainer(selectElement(""))
     });
 
     return div;
@@ -144,11 +143,10 @@ function createLightHeart () {
 function createDarkHeart () {
     let div = createElement("div");
     div.classList.add("my-likes");
-    div.innerHTML = 'd'
-    // div.innerHTML = '<i class="fa-solid fa-heart"> </i>'
+    div.innerHTML = '<i class="fa-solid fa-heart"> </i>'
 
     div.addEventListener("click", function () {
-
+        changeClassOnLikeContainer()
     });
 
     return div;

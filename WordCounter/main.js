@@ -9,8 +9,6 @@ input.addEventListener("keyup", function () {
     let word = document.querySelector(".words");
     let words = input.value.match(/\b[-?(\w+)?]+\b/gi);
 
-    console.log(words); 
-
     if (words) {
         word.textContent = words.length
     } else {

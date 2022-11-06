@@ -1,6 +1,7 @@
 let a = []
 
 function likedPrograms () {
+
     // let storedLikedArray = JSON.parse(localStorage.getItem("likedArray"));
 
     let header = selectElement("header")
@@ -41,5 +42,28 @@ function likedPrograms () {
 }
 
 function createLike (program) {
-    
+    let likedItem = createElement("div");
+    likedItem.classList.add("liked-item");
+
+    let info = createElement("div");
+    info.innerHTML = ` <p class="bold"> ${program.name} <p class="liked-info"> ${getSubject(program)}, ${getCountry(program)}, ${DB.LEVELS[program.level]} </p>`
+    info.addEventListener("click", function () {
+        // popUpProgram();
+    })
+    likedItem.append(info);
+
+    return likedItem
 }
+
+function createHeartLike (program, element) {
+    let hearthItem = createElement("div");
+    hearthItem.classList.add("liked-heart-div");
+    hearthItem.innerHTML = `<i class="fa-solid fa-heart dark-heart"></i>`;
+
+    hearthItem.addEventListener("click", function () {
+        removeLike(program, element);
+    });
+
+    return hearthItem;
+}
+

@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(65, 64, 64);
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: bolder;
+}
+
+.online {
+    background-color: rgb(63, 158, 63);
+    color:rgb(65, 64, 64);
+}
+
+.offline {
+    background-color: rgb(167, 62, 48);
+    color:rgb(65, 64, 64);
+}

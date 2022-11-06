@@ -112,5 +112,3 @@ function filterHandelers () {
     showAllBtn.addEventListener("click", showAll);
 
 }
-
-// filterHandelers();
